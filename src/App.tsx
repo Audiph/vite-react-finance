@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          {/* reset css settings to default that MUI has set */}
+          {/* CssBaseline = reset css settings to default that MUI has set */}
           <CssBaseline />
           <Box width="100%" height="100%" padding="1rem 2rem 4rem 2rem">
             <Routes>
