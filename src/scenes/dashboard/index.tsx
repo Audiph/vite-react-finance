@@ -1,5 +1,8 @@
 import DashboardBox from '@/components/DashboardBox';
 import { Box, useMediaQuery } from '@mui/material';
+import Row1 from './Row1';
+import Row2 from './Row2';
+import Row3 from './Row3';
 
 interface DashboardProps {}
 
@@ -72,16 +75,9 @@ const Dashboard = ({}: DashboardProps) => {
             }
       }
     >
-      <DashboardBox bgcolor="#fff" gridArea="a"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="b"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="c"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="d"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="e"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="f"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="g"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="h"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="i"></DashboardBox>
-      <DashboardBox bgcolor="#fff" gridArea="j"></DashboardBox>
+      <Row1 />
+      <Row2 />
+      <Row3 />
     </Box>
   );
 };
