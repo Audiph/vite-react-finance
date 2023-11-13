@@ -4,6 +4,7 @@ import { themeSettings } from './theme';
 import { createTheme } from '@mui/material/styles';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Dashboard from '@/scenes/dashboard';
+import Predictions from '@/scenes/predictions';
 import Navbar from '@/scenes/navbar';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/predictions" element={<div>prediction page</div>} />
+              <Route path="/predictions" element={<Predictions />} />
             </Routes>
           </Box>
         </ThemeProvider>
