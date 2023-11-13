@@ -16,9 +16,7 @@ import {
 } from 'recharts';
 import regression, { DataPoint } from 'regression';
 
-interface PredictionsProps {}
-
-const Predictions = ({}: PredictionsProps) => {
+const Predictions = () => {
   const { palette } = useTheme();
   const [isPredictions, setIsPredictions] = useState(false);
   const { data: kpiData } = useGetKpisQuery();

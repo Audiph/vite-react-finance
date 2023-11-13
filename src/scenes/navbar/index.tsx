@@ -4,9 +4,7 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-interface NavbarProps {}
-
-const Navbar = ({}: NavbarProps) => {
+const Navbar = () => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState('dashboard');
   return (
