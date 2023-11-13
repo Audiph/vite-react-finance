@@ -18,9 +18,7 @@ import {
   YAxis,
 } from 'recharts';
 
-interface Row1Props {}
-
-const Row1 = ({}: Row1Props) => {
+const Row1 = () => {
   const { palette } = useTheme();
   const { data } = useGetKpisQuery();
   const revenueExpenses = useMemo(() => {
